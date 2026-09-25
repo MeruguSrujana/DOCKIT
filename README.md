@@ -1,21 +1,21 @@
 # DOCKIT — SIH26190 Prototype
 
 Case-centric document lifecycle & provenance system for legal and investigation documents.
-Team SCRITHM (Team ID 31).
+Team SCRITHM.
 
 This is a real, database-backed implementation of the approved architecture — not a mockup.
 Every workflow transition, hash, and audit entry described below was tested against a running
 instance before this was written.
 
-## Quick start (Docker — matches the deployed architecture)
+((((## Quick start (Docker — matches the deployed architecture)
 
 ```bash
 docker compose up --build
 ```
 
-- Backend API: http://localhost:8000 (docs at /docs)
+((- Backend API: http://localhost:8000 (docs at /docs)
 - Frontend: http://localhost:5173
-- Postgres runs inside Docker; the backend seeds demo data automatically on first boot.
+- Postgres runs inside Docker; the backend seeds demo data automatically on first boot.))
 
 ## Quick start (local dev, no Docker — uses SQLite)
 
@@ -31,7 +31,7 @@ uvicorn app.main:app --reload
 cd frontend
 npm install
 echo "VITE_API_URL=http://localhost:8000" > .env
-npm run dev
+npm run dev)))))
 ```
 
 ## Demo accounts
